@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <View
+        style="@style/Text.Primary"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container_color_background"
+        android:layout_above="@+id/div_center"
+        />
+    <TextView
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        tools:text="2:34AM 26/05/2018"
+        android:layout_above="@+id/div_center"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_time_date_header"/>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/div_center"
+        android:layout_centerVertical="true"
+        android:layout_height="1dp"/>
+    <TextView
+        style="@style/Text.Secondary"
+        tools:text="this is the demo app for recyclerView from wiseass youtube channel. "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageBody"
+        android:padding="16dp"
+        android:layout_below="@id/div_center"/>
+
+
+</RelativeLayout>
